@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.left-side {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.right-side {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    left: 35%;
+    bottom: 100%;
+}
+
+.left-side_menu {
+    width: 100%;
+    height: 75%;
+    background-color: lightgoldenrodyellow;
+}
+
+.left-side_content {
+    width: 100%;
+    height: 25%;
+    background-color: lightgreen;
+}
+
+.right-side_title, .right-side_footer {
+    width: 100%;
+    height: 25%;
+    background-color:rgb(115, 178, 231);
+    font-size: 26pt;
+}
+
+.right-side_content {
+    width: 100%;
+    height: 50%;
+    background-color:rgb(230, 230, 230);
+    font-size: 18pt;
+}
+
+.right-side_content>div, #add {
+    padding: 15px 10px;
+}
+
+#name {
+    font-size: 25px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.titles {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    left: 2%;
+    top: 30%;
+}
+
+.images {
+    width: 50%;
+    height: 100%;
+}
+
+.right-side_footer {
+    font-size: 16pt;
+}
+
+.right-side_footer>.images {
+    padding-left: 30px;
+    width: 45%;
+    height: 96%;
+}
+
+.right-side_footer>.titles {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 80%;
+    top: 85.5%;
+}
+
+.images>img {
+    width: 60%;
+    height: 100%;
+}
+
+.right-side_title>.images {
+    position: relative;
+    bottom: 70%;
+    left: 50%;
+}
+
+nav {
+    padding: 15px 15px;
+    font-size: 30pt;
+}
+
+nav>ul>li {
+    padding-bottom: 15px;
+}
