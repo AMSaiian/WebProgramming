@@ -1,0 +1,46 @@
+@media only screen and (max-width: 950px) {
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .left-side {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side_content {
+        font-size: 12pt;
+    }
+
+    .images>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side_title {
+        font-size: 14pt;
+    }
+
+    .right-side_footer {
+        font-size: 12pt;
+    }
+
+    #add {
+        font-size: 10pt;
+    }
+
+    nav {
+        font-size: 14pt;
+    }
+}
