@@ -19,28 +19,50 @@
         height: auto;
     }
 
-    .right-side_content {
-        font-size: 12pt;
-    }
-
     .images>img {
         width: 100%;
         height: auto;
     }
 
+    .right-side_content {
+        font-size: 25pt;
+    }
+
     .right-side_title {
-        font-size: 14pt;
+        font-size: 27pt;
     }
 
     .right-side_footer {
-        font-size: 12pt;
+        font-size: 23pt;
     }
 
     #add {
-        font-size: 10pt;
+        font-size: 18pt;
     }
 
     nav {
-        font-size: 14pt;
+        font-size: 21pt;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .right-side_content {
+            font-size: 16pt;
+        }
+    
+        .right-side_title {
+            font-size: 17pt;
+        }
+    
+        .right-side_footer {
+            font-size: 14pt;
+        }
+    
+        #add {
+            font-size: 12pt;
+        }
+    
+        nav {
+            font-size: 15pt;
+        }
     }
 }
