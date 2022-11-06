@@ -1,0 +1,310 @@
+
+* {
+    margin: 0;
+}
+
+#burger, [for=burger] {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 7%;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+    width: 27%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo>img {
+    padding: 2%;
+    padding-left: auto;
+    max-height: 90%;
+    max-width: 90%;
+    height: auto;
+    width: auto;
+}
+
+nav {
+    height: 100%;
+    width: 73%;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    padding-right: 3%;
+    align-self: center;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: orange;
+}
+
+main {
+    height: 78%;
+    width: 100%;
+    background-color: #e0e5eb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.meeting, .conversation {
+    height: 48%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.meeting {
+    align-items: flex-start;
+}
+
+.conversation>img, .meeting>img {
+    max-height: 85%;
+    max-width: 85%;
+    height: auto;
+    width: auto;
+}
+
+.right-side {
+    height: 100%;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side_upper {
+    height: 63%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.right-side_upper>img {
+    max-width: 100%;
+    max-height: 82%;
+    height: auto;
+    width: auto;
+}
+
+.block-text {
+    max-width: 310px;
+    max-height: 220px;
+    width: 50%;
+    height: 55%;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+}
+
+.block-text>h2, .block-text>p {
+    padding: 5% 3% 0% 6%;
+}
+
+.block-text>p {
+    font-size: 14px;
+}
+
+.right-side_down {
+    height: 33%;
+}
+
+.additonal {
+    max-height: 55%;
+    max-width: 38%;
+    height: auto;
+    width: auto;
+    font-size: 12.5px;
+    font-style: italic;
+}
+
+.button {
+    height: 18%;
+    width: 20%;
+    margin: 2% 0 1% 0;
+}
+
+.button>button {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button>button:hover {
+    border: 1px solid orange;
+    color: orange;
+}
+
+footer {
+    height: 15%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+footer>p {
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+    
+    [for=burger] {
+        display: flex;
+        align-self: center;
+        position: relative;
+        left: 50%;
+    }
+
+    #burger:checked + label + nav {
+        display: flex;
+    }
+
+    ul {
+        display: inline;
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        background-color: rgba(191, 206, 245, 0.864);
+        width: 50%;
+        height: auto;
+        text-align: center;
+    }
+
+    li {
+        padding: 3%;
+    }
+
+    a {
+        color: black;
+        font-size: 18px;
+    }
+
+    nav {
+        display: none;
+        width: auto;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .conversation, .meeting {
+        width: auto;
+    }
+
+    .conversation {
+        padding-right: 15%;
+    }
+
+    .meeting {
+        justify-content: flex-start;
+        padding-left: 15%;
+    }
+
+    .right-side_upper, .right-side_down {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side_upper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    .block-text {
+        left: 30%;
+        bottom: 25%;
+        height: auto;
+        width: 65%;
+    }
+
+    .block-text>p {
+        padding-bottom: 15%;
+    }
+
+    .right-side_upper>img {
+        max-width: 90%;
+        max-height: 90%;
+        padding-top: 5%;
+        padding-right: 5%;
+    }
+
+    .additonal {
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .button {
+        height: auto;
+        width: 35%;
+        align-self: center;
+        margin-bottom: 5%;
+    }
+
+    footer>p {
+        font-size: 12px;
+        padding: 2% 0 2% 0;
+    }
+}
