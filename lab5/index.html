@@ -26,6 +26,11 @@
                         <a id="lmig29" href="./MiG29.html">
                         МиГ-29</a>
                     </li>
+                    <li>
+                        <a id="userNameForm" onclick="createForm()">
+                            Показати форму
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -55,10 +60,24 @@
                 </p>
                 <p id="dscrp"> Штурмовик предназначен для непосредственной поддержки сухопутных войск над полем боя днём и ночью при прямой видимости цели, а также уничтожения объектов с заданными координатами круглосуточно в любых метеоусловиях. Су-25 впервые поднялся в воздух 22 февраля 1975 года. Самолёты этого типа эксплуатируются с 1981 года, принимали участие во множестве военных конфликтов и останутся в строю как минимум до 2020 года.
                 </p>
-                <form action="#" method="post" enctype="multipart/form-data"></form>
-                <p id="formHead">Введіть натуральне число<br></p>
-                <input type="text" name="NaturNum" value="">
             </div>
+            <div id="formBlock">
+                <form action="" method="post" name="naturNumForm" id="form">
+                <p>Введіть натуральне число<br></p>
+                <input placeholder="Натуральне число" type="text" name="NaturNum" value="">
+                <input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Відправити">
+                </form>
+            </div>
+            <ul id="checkboxes">
+                <li>
+                    <input type="checkbox" onclick="parseMoveCheckboxes()" name="mouseover1" id="mouseover1">
+                    <label for="mouseover1">MouseOver1</label>
+                </li>
+                <li>
+                    <input type="checkbox" onclick="parseMoveCheckboxes()" name="mouseover2" id="mouseover2">
+                    <label for="mouseover2">MouseOver2</label>
+                </li>
+            </ul>
         </aside>
         <aside class="right-side_footer">
             <div class="images">

@@ -55,9 +55,23 @@
                 </p>
                 <p id="dscrp">Разработан в 1970-х годах в Опытном конструкторском бюро имени А. И. Микояна. МиГ-29 предназначен для уничтожения управляемыми ракетами и огнём из бортовой пушки всех типов воздушных целей в простых и сложных метеоусловиях в свободном пространстве и на фоне земли, в том числе в условиях помех, а также для поражения наземных целей с применением неуправляемых средств поражения в условиях визуальной видимости.
                 </p>
-                <form action="#" method="post" enctype="multipart/form-data"></form>
-                <p id="formHead">Введіть натуральне число<br></p>
-                <input type="text" name="NaturNum" value="">
+            </div>
+            <div id="formBlock">
+                <form action="" method="post" name="naturNumForm" id="form">
+                <p>Введіть натуральне число<br></p>
+                <input placeholder="Натуральне число" type="text" name="NaturNum" value="">
+                <input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Відправити">
+                <ul id="checkboxes">
+                    <li>
+                        <input type="checkbox" name="mouseover1" id="mouseover1">
+                        <label for="mouseover1">MouseOver1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mouseover2" id="mouseover2">
+                        <label for="mouseover2">MouseOver2</label>
+                    </li>
+                </ul>
+                </form>
             </div>
         </aside>
         <aside class="right-side_footer">

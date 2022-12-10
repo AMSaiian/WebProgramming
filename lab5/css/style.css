@@ -92,6 +92,7 @@ body {
 }
 
 nav {
+    display: flex;
     padding: 15px 15px;
     font-size: 30pt;
 }
@@ -100,6 +101,13 @@ nav>ul>li {
     padding-bottom: 15px;
 }
 
-#formHead {
-    margin-top: 15px;
+#formBlock {
+    padding: 0 0 0 10px;
+}
+
+#checkboxes {
+    margin-top: 6px;
+    margin-left: 0;
+    padding-left: 10px;
+    list-style: none;
 }

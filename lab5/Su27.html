@@ -50,14 +50,28 @@
             </div>
         </aside>
         <aside class="right-side_content">
-            <div>
+            <div id="textInfo">
                 <p id="name">Су-27 (заводской шифр Т-10С; по кодификации НАТО: Flanker-B — «Фланкер-Б») — советский многоцелевой всепогодный сверхзвуковой тяжёлый истребитель четвёртого поколения.
                 </p>
                 <p id="dscrp">Разработан в ОКБ Сухого и предназначенный для завоевания превосходства в воздухе. Также самолёт применяется для ракетно-бомбовых ударов по наземным целям. Является носителем тактических ядерных боеприпасов. Самолёты серии Су-27/30 на 2019 год занимали третье место по численности среди самых распространённых боевых самолётов мира.
                 </p>
-                <form action="#" method="post" enctype="multipart/form-data"></form>
-                <p id="formHead">Введіть натуральне число<br></p>
-                <input type="text" name="NaturNum" value="">
+            </div>
+            <div id="formBlock">
+                <form action="" method="post" name="naturNumForm" id="form">
+                <p>Введіть натуральне число<br></p>
+                <input placeholder="Натуральне число" type="text" name="NaturNum" value="">
+                <input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Відправити">
+                <ul id="checkboxes">
+                    <li>
+                        <input type="checkbox" name="mouseover1" id="mouseover1">
+                        <label for="mouseover1">MouseOver1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mouseover2" id="mouseover2">
+                        <label for="mouseover2">MouseOver2</label>
+                    </li>
+                </ul>
+                </form>
             </div>
         </aside>
         <aside class="right-side_footer">
